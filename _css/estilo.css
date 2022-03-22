@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+@font-face {
+    font-family: 'FontLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body{
+    font-family: Arial,sans-serif;
+    background-color: #c1c1c1;
+    color: black;
+}
+
+div#interface {
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px ;
+    position: relative;
+}
+video#video {
+    width: 450px;
+    margin: 0 0 10px 30px;
+}
+
+video#video1 {
+    width: 350px;
+    position: center;
+    margin-left: 12px;
+
+
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+a{
+    color: #606060;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    transition: .5s;
+}
+header#cabecalho img#icone{
+    position: absolute;
+    left: 81%;
+    top: 60px;
+
+}
+
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+}
+header#cabecalho h1{
+    font-family: 'Inspiration', cursive;
+    font-size: 30pt;
+    color: #606069;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20pt;
+    color: #888881;
+    padding: 0px;
+    margin-top: 0px;
+
+}
+/* formatação de imagens com legenda */
+
+figure.foto-legenda{
+    border: 8px solid white;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
+
+}
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+
+}
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: beige;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+
+/*Formatação do Menu*/
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position:absolute ;
+    top: -10px;
+    left: 270px;
+
+}
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 3px;
+    transition: background-color 0.5s;
+}
+nav#menu li:hover{
+    background-color: #606060;
+}
+
+nav#menu h1{
+    display: none;
+}
+nav#menu a {
+    color:black;
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color:white;
+}
+
+section#corpo{
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+article#noticia-pricipal h2{
+    font-size: 12pt;
+    color: #606069;
+    background-color: #b5b5b5;
+    padding: 5px;
+    margin: 3px;
+}
+
+header#cabecalho-artigo h1{
+    font-family: 'Inspiration', sans-serif;
+    font-size: 35pt;
+    color: #606060;
+    margin: 5px;
+}
+
+header#cabecalho-artigo h2{
+    font-size: 20px;
+    color: #606060;
+    margin: 5px;
+    background-color: white;
+}
+
+header#cabecalho-artigo h3{
+    color: #606060;
+    background-color: white;
+    margin: 10px;
+}
+.dir{
+    text-align: right;
+}
+
+table#tabelaspecs{
+    border: 1px solid black;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+table#tabelaspecs td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+table#tabelaspecs td.ce{
+    color: white;
+    background-color: gray;
+    text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+
+}
+table#tabelaspecs td.cd{
+    background-color: #b5b5b5;
+    text-align: left;
+}
+
+table#tabelaspecs caption{
+    color: #888888;
+    font-size: 14pt;
+    font-weight: lighter;
+}
+
+table#tabelaspecs caption span{
+    display: block;
+    float: right;
+    color: black;
+    font-size: 12pt;
+    margin-top: 10px;
+}
+
+aside#lateral{
+    display: block;
+    width: 375px;
+    float: right;
+    background-color: #c1c1c1;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1{
+    font-family: 'Inspiration', sans-serif;
+    color: black;
+    font-size: 30pt;
+    margin: 10px;
+}
+
+aside#lateral h2{
+    color: whitesmoke;
+    font-family: Arial,sans-serif;
+    background-color: #606060;
+    margin: 10px;
+    padding: 3px;
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+footer#rodape p{
+   text-align: center;
+
+}
